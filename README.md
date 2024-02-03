@@ -32,9 +32,7 @@
 
 
 <p>
-<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/9a82855b-368e-4bb9-b7ed-c867b4b870b5
-"
-/>
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/9a82855b-368e-4bb9-b7ed-c867b4b870b5"/>
 </p>
 <p>
 1) Firt step is to analyze the amount of users we have on our current system with the "cat /etc/passwd command" in the command line. To get a an eact count of how many users there are in the system you can do the "cat /etc/passwd | wc -l" command and it will return the number of user lines displayed. 
