@@ -43,9 +43,7 @@
 <img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/d364ea97-ebb5-4d37-bbe7-7e028f346ef1"/>
 </p>
 <p>
-2) After installing Wireshark on the Windows VM open it and filter for "ICMP" traffic in the search bar. Without pinging the second VM nothing will appear in the results so the next step will be to open Windows Powershell and ping the private address from the Ubuntu VM. (Retrieve the Private IP Address through Azure Portal) 
-  Return back to Wireshark and observe the packet traffic after pinging the IP address in Powershell. 
-  Another interesting thing you can do is go into your Network Security Groups in your Ubuntu VM disable inbound ICMP traffic and see how the traffic in Wireshark will cease upon this. Reenable when finished observing.
+2) To crate new users on a system simlpy use the "sudo useradd -m (username)" Adding the -m attribute also creats a home directory for the profile, which is neccasary for new users.Otherwise you ca just use the "sudo useradd (username)" command. Also be sure to add sudo to gain root privleges to do so, otherwise it will not work!
 </p>
 <br />
 
