@@ -31,7 +31,7 @@
 
 
 <p>
-<img src="![Linux](https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/1a711d16-10f7-4431-ac8b-97dd497e4b2b)
+<img src="![Linux](https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/1a711d16-10f7-4431-ac8b-97dd497e4b2b)"
 />
 </p>
 <p>
