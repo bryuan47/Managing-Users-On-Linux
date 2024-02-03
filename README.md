@@ -1,6 +1,7 @@
 # Managing-Users-On-Linux
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/eef4ea4b-7492-4ee6-9925-e11f9854c74c"
+/>
 </p>
 
 <h1>Managing Users on Linux with the Linux Ubuntu Command Line</h1>
