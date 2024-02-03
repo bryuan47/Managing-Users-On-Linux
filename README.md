@@ -32,11 +32,12 @@
 
 
 <p>
-<img src="![Linux](https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/1a711d16-10f7-4431-ac8b-97dd497e4b2b)"
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/9a82855b-368e-4bb9-b7ed-c867b4b870b5
+"
 />
 </p>
 <p>
-1) Through the Azure Portal create two virtual machines one with Windows 10 OS and the other with Linux(Ubuntu) OS. Creating virtual machines automatically creates the virtual network and subnet. When the machines have started log into the Windows VM and download Wireshark to observe packet traffic. 
+1) Firt step is to analyze the amount of users we have on our current system with the "cat /etc/passwd command" in the command line. To get a an eact count of how many users there are in the system you can do the "cat /etc/passwd | wc -l" command and it will return the number of user lines displayed. 
 </p>
 <br />
 
