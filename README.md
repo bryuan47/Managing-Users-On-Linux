@@ -47,24 +47,42 @@
 </p>
 <br />
 
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/5367ade7-cf16-4b23-91b3-b6c745854a04"/>
 
 <p>
-3) After observing SSH traffic filter for SSH traffic next in the search bar. Head back into Powershell on the Windows machine and SSH into your Ubuntu Linux machine by typing "ssh (username) (private IP address)" into the command line. Then return to Wireshark to observe the traffic. Type "exit" to stop the ssh connection to the Ubuntu machine. 
+3) Now lets find the user you just created! To find the user Mike2423 and see some password details type the "sudo cat /etc/passwd | grep Mike2423". This will retun the user you just created from that huge list we generated in Step 1.  
 </p>
+
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/71aec559-5de2-409c-9968-bd92ad53819e"/>
 
 <p> 
-4) To observe for DHCP traffic enter DHCP in the above filter box instead of SSH. Go back to your Windows command line and type "ipconfig /renew" to issue a new address to your machine. Go back to Wireshark and observe the traffic. 
+4) To delete users lets use the "sudo userdel Mike2423".When you delete users unless you add the -r attribute the home direcory will remian while the user is deleted.  
 </p>
 
-<p>
-5) After observing DHCP traffic replace DHCP in the filter box with "DNS". Then return to your command line type "nslookup" and use an example domain such as "google.com" to see the IP address for the website. Then return to Wireshark and observe the traffic. 
-</p>
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/52ea2109-c5ea-4024-91c4-322d2e02910d"/>
 
 <p>
-6) This might be the easiest one! Examing for RDP means going back to Wireshark and replacing the filter box with "RDP" for traffic. Then immediately you can see the traffic is constant. This is because you are using Remote Desktop to access to machine in the first place!
+5) Great! Now our new user needs a password for security. To create password for the user you created type the "sudo passwd Mike2423" Be sure to make a complex secure password or you will get a "BAD PASSWORD" reply back. Dont forget to put sudo for root privleges! 
 </p>
 
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/54724312-a6ab-48a7-bfc0-22c5474a9087"/>
+
 <p>
-7) Don't forget to cleanup! You don't want to leave any virtual machines running to avoid unnecessary costs!
+6) To observe details about password such as the last time a password was changed or when does it expire type the "sudo chage -l Mike2423" command". 
+</p>
+
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/91e2cbc5-3b95-43ce-9aa9-ac629768bd11"/>
+
+<p>
+7) Now its time to add a password expiration date for users. You can do this by typing the "sudo chage -M 40 Mike2423". This command will make the password expire in 40 days from the days from the current day.
+</p>
+
+<img src ="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/21b1416c-7a6a-4c96-87af-daac21f90ba8"/>
+
+<p> 
+8) Lastly, lets create an account expiration for some temporary employees. To do this type the "sudo chage -E 2024-08-01 Mike2423" Make sure to type the sudo command to grant yourself root privleges. This command will make sure the account will be deleted August 1st 2024. 
+</p>
+<p>
+9) Time to clean up! Just simply type clear on the command line to clear the terminal and close the window. 
 </p>
 <br />
