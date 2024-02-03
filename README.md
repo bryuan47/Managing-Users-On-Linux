@@ -40,8 +40,7 @@
 <br />
 
 <p>
-<img src="https://github.com/bryuan47/azure-network-protocols/assets/76184628/53595e23-22b9-473e-9469-7909688ec470"
->
+<img src="https://github.com/bryuan47/Managing-Users-On-Linux/assets/76184628/d364ea97-ebb5-4d37-bbe7-7e028f346ef1"/>
 </p>
 <p>
 2) After installing Wireshark on the Windows VM open it and filter for "ICMP" traffic in the search bar. Without pinging the second VM nothing will appear in the results so the next step will be to open Windows Powershell and ping the private address from the Ubuntu VM. (Retrieve the Private IP Address through Azure Portal) 
